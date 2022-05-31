@@ -5,8 +5,8 @@ spring:
     config:
       server:
         git:
-          default-label: config-server
+          default-label: config-sercer
           uri: https://github.com/chancrex/microservicios-prueba
           search-paths: config-data
   application:
-    name: config-service     
+    name: config-sercer 

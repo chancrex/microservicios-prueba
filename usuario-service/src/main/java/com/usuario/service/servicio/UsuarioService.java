@@ -65,7 +65,7 @@ public class UsuarioService {
 		return nuevaMoto;
 	}
 	
-	public Map<String, Object> getUsuarioAndVehiculos(int usuarioId){
+	public Map<String, Object> getUsuarioAndVehiculos(int usuarioId){	
 		Map<String,Object> resultado = new HashMap<>();
 		Usuario usuario = usuarioRepository.findById(usuarioId).orElse(null);
 		
@@ -87,7 +87,7 @@ public class UsuarioService {
 		if(motos.isEmpty()) {
 			resultado.put("Motos", "El usuario no tiene motos");
 		}		
-		else {
+		else { 
 			resultado.put("Motos", motos);
 		}
 		return resultado;
